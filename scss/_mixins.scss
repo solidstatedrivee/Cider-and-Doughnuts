@@ -1,0 +1,86 @@
+// MEDIA QUERIES
+@mixin mq ($value) {
+    $medium: 600px;
+    $large: 900px;
+    $xlarge: 1200px;
+    $xxlarge: 1600px;
+    $xxxlarge: 1900px;
+    
+    @if $value == medium {
+        @media screen and (min-width: $medium) {
+            @content;
+        }
+    }
+    @else if $value == large {
+        @media screen and (min-width: $large) {
+            @content;
+        }
+    }
+    @else if $value == xlarge {
+        @media screen and (min-width: $xlarge) {
+            @content;
+        }
+    }
+    @else if $value == xxlarge {
+        @media screen and (min-width: $xxlarge) {
+            @content;
+        }
+    }
+    @else if $value == xxxlarge {
+        @media screen and (min-width: $xxxlarge) {
+            @content;
+        }
+    }
+}
+
+// STYLES THE LINKS IN THE ASIDE SECTION
+@mixin asideBlock {
+    background-size: cover;
+    background-position: center;
+    padding: 75px;
+    position: relative;
+    z-index: 0;
+    h2 {
+        text-align: center;
+        text-transform: uppercase;
+        text-decoration: underline;
+        font-size: 2rem;
+        z-index: 2;
+        color: $lighterBlue;
+        transition: all 500ms ease;
+    }
+}
+
+@mixin asideBlockAfter {
+    content: "";
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background:  rgba(123, 75, 148, .65);
+    z-index: -1;
+}
+
+
+@mixin sm {
+        //   border: $border;
+          font-size: 1.5rem;
+          padding: 10px;
+          background: $lighterBlue;
+          width: $iconSize;
+          height: $iconSize;
+          text-align: center;
+          border-radius: 50%;
+          transition: all 500ms ease;
+    
+}
+
+@mixin smHover {
+    color: $lighterBlue;
+    background: $blue;
+    // font-size: 2rem;
+    // width: 54px;
+    // height: 54px;
+}

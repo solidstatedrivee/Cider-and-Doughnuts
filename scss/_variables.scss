@@ -1,0 +1,27 @@
+// COLOR PALETTE
+
+    // HEX CODES
+    $purple: #7b4b94;
+    $blue: #7d82b8;
+    $lighterBlue: #b7e3cc;
+    $lightestBlue: #c4ffb2;
+    $green: #d6f7a3;
+
+    //RGB CODES
+    $purple: rgb(123, 75, 148);
+    $blue: rgb(125, 130, 184);
+    $lighterBlue: rgb(183, 227, 204);
+    $lightestBlue: rgb(196, 255, 178);
+    $green: rgb(214, 247, 163);
+
+//BORDER USED AS AID IN DEVELOPMENT
+$border: 1px solid black;
+
+// KERNING FOR TITLES
+$letterSpacing: 3px;
+
+// MAINTAINS EQUAL ASPECT RATIO OF ICONS IN FOOTER
+$iconSize: 45px;
+
+// COMMONPLACE TRANSITION EFFECT ON HOVER
+$transition: all 500ms ease;
